@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './FrontPageComps/Scroll.css';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { LinkContainer } from 'react-router-bootstrap';
@@ -40,10 +41,10 @@ class App extends Component<{},
     );
 
     return (
-      <div>
+      <div className='scrollbar scrollbar-secondary'>
         <Router>
           <div>
-          <MDBNavbar style={navStyle} dark expand="md" fixed="top" color="blue">
+          <MDBNavbar style={navStyle} dark expand="md" fixed="top" color="purple">
             <MDBContainer>
               <MDBNavbarBrand>
                 <strong className="white-text eazi-logo">Eazi4u</strong>

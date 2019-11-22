@@ -1,0 +1,93 @@
+.mainPage {
+    margin-top: 110px;
+}
+
+.App {
+    text-align: center;
+  }
+  
+  .form-control {
+    margin: 1rem 0;
+  }
+  
+  .form-control label,
+  .form-control input,
+  .form-control textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  
+  .form-control input,
+  .form-control textarea {
+    border: 1px solid #a1a1a1;
+    font: inherit;
+    border-radius: 6px;
+  }
+  
+  .form-control input:focus,
+  .form-control textarea:focus {
+    outline-color: green;
+  }
+  
+  .form-control input.invalid,
+  .form-control textarea.invalid {
+    border-color: red;
+  }
+  
+  .text{
+    text-align: center;
+    color: #fff;
+    text-decoration-color: #fff;
+  /* width: 18rem; */
+  }
+  
+  .top {
+  margin: 10px 0;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10;
+  justify-content: space-between;
+  }
+  
+  #classicformpage .view {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/gradient2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  }
+  
+  #classicformpage .gradient {
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%));
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+  }
+  
+  #classicformpage .card {
+  background-color: rgba(126, 123, 215, 0.2);
+  }
+  
+  #classicformpage h6 {
+  line-height: 1.7;
+  }
+  
+  #classicformpage .navbar {
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+  
+  #classicformpage .top-nav-collapse {
+  background: #424f95 !important;
+  }
+  
+  @media (max-width: 768px) {
+  #classicformpage .navbar:not(.top-nav-collapse) {
+      background: #424f95 !important;
+  }
+  }
+  
+  #classicformpage label {
+  color: #fff!important;
+  }
