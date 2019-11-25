@@ -60,7 +60,7 @@ class App extends Component<{},
               >
                 <MDBNavbarNav left>
                   <LinkContainer to={'/'}>
-                    <MDBNavItem className="disabled">
+                    <MDBNavItem>
                       <MDBNavLink to="/">Home</MDBNavLink>
                     </MDBNavItem>
                   </LinkContainer>

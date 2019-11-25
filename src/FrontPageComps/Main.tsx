@@ -10,6 +10,9 @@ import {
 } from "mdbreact";
 import axios from 'axios';
 import Second from './SecondComp';
+import Third from './ThirdComp';
+import Fourth from './FourthComp';
+import Footer from './Footer';
 
 class Main extends Component<{}, {}>{
 
@@ -81,6 +84,9 @@ class Main extends Component<{}, {}>{
                     </MDBView>
                     </Router>
                     <Second />
+                    <Third />
+                    <Fourth />
+                    <Footer />
                     </div>
         );
     }
