@@ -12,6 +12,7 @@ import Main from './FrontPageComps/Main';
 import SignIn from '../src/Forms/SignIn';
 import About from '../src/About/AboutUs';
 import Help from './Help/Help';
+import Interviews from './Interviews/Interviews';
 class App extends Component<{},
   { collapseID: string, showMain: boolean }>{
 
@@ -41,7 +42,7 @@ class App extends Component<{},
     );
 
     return (
-      <div className='scrollbar scrollbar-secondary'>
+      <div>
         <Router>
           <div>
           <MDBNavbar style={navStyle} dark expand="md" fixed="top" color="purple">
@@ -59,7 +60,7 @@ class App extends Component<{},
               >
                 <MDBNavbarNav left>
                   <LinkContainer to={'/'}>
-                    <MDBNavItem>
+                    <MDBNavItem className="disabled">
                       <MDBNavLink to="/">Home</MDBNavLink>
                     </MDBNavItem>
                   </LinkContainer>
@@ -75,12 +76,12 @@ class App extends Component<{},
                   </LinkContainer>
                   <LinkContainer to={'/interviews'}>
                       <MDBNavItem>
-                        <MDBNavLink className="mx-3" onClick={this.changeState} to='/interviews'> Interviews </MDBNavLink>
+                        <MDBNavLink onClick={this.changeState} to='/interviews'> Interviews </MDBNavLink>
                       </MDBNavItem>
                   </LinkContainer>
                   <LinkContainer to={'/candidate'}>
                       <MDBNavItem>
-                        <MDBNavLink className="mx-3" to='/candidate'> CandidatePort </MDBNavLink>
+                        <MDBNavLink to='/candidate'> CandidatePort </MDBNavLink>
                       </MDBNavItem>
                     </LinkContainer>
                 </MDBNavbarNav>
@@ -107,6 +108,7 @@ class App extends Component<{},
             <Route exact path='/' component={Main}/>
             <Route path='/signIn' component={SignIn} />
             <Route path='/aboutUs' component={About}/>
+            <Route path='/interviews' component={Interviews} />
             <Route path='/help' component={Help} />
           </Switch>
         </Router>
