@@ -20,7 +20,7 @@ const FooterPage = () => {
                 <a href="/help">Help</a>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 2</a>
+                <a href="/aboutUs">About Us</a>
               </li>
               <li className="list-unstyled">
                 <a href="#!">Link 3</a>
